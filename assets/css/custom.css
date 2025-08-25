@@ -1,0 +1,162 @@
+/* Pastel Color Palette */
+:root {
+    --pastel-pink: #f8b195;
+    --pastel-orange: #f67280;
+    --pastel-purple: #c06c84;
+    --pastel-blue: #6c5b7b;
+    --pastel-green: #355c7d;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--pastel-blue);
+}
+
+.gradient {
+    background: linear-gradient(45deg, var(--pastel-pink), var(--pastel-orange));
+}
+
+/* Hire Me Page */
+.hire-me-page .heading h2 {
+    color: var(--pastel-purple);
+}
+
+.hire-me-page .contact-info h3 {
+    color: var(--pastel-purple);
+    margin-bottom: 20px;
+}
+
+.hire-me-page .contact-info .info-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hire-me-page .contact-info .info-item .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: var(--pastel-orange);
+}
+
+.hire-me-page form {
+    background-color: var(--white);
+}
+
+.hire-me-page .form-label {
+    color: var(--pastel-blue);
+}
+
+.hire-me-page .form-control {
+    border-color: var(--pastel-pink);
+}
+
+.hire-me-page .btn-primary {
+    background-color: var(--pastel-orange);
+    border-color: var(--pastel-orange);
+}
+
+.hire-me-page .btn-primary:hover {
+    background-color: var(--pastel-purple);
+    border-color: var(--pastel-purple);
+}
+
+/* Index Page */
+.portfolio-block.block-intro {
+    background-color: var(--pastel-pink);
+    color: var(--white);
+}
+
+.portfolio-block.block-intro .avatar {
+    width: 250px;
+    height: 250px;
+    border-color: var(--white);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.portfolio-block.block-intro .avatar:hover {
+    transform: rotateY(180deg);
+}
+
+.portfolio-block.block-intro .about-me {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-block.block-intro .about-me p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn-outline-primary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-outline-primary:hover {
+    color: var(--pastel-pink);
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.portfolio-block.cv {
+    padding: 100px 0;
+}
+
+.portfolio-block.cv .heading h2 {
+    color: var(--pastel-purple);
+    margin-bottom: 50px;
+}
+
+.portfolio-block.cv .group {
+    margin-bottom: 50px;
+}
+
+.portfolio-block.cv .item {
+    background-color: var(--light-gray);
+    border-left: 5px solid var(--pastel-orange);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.portfolio-block.cv .item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-block.cv .item h3 {
+    color: var(--pastel-purple);
+}
+
+.portfolio-block.cv .item .badge {
+    background-color: var(--pastel-blue);
+}
+
+.skills.portfolio-info-card,
+.contact-info.portfolio-info-card {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hobbies.group {
+    padding: 50px 0;
+    background-color: var(--light-gray);
+}
+
+/* Animations */
+.scale-on-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
